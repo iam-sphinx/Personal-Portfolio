@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .title-1 {
+    @apply font-Glory font-semibold text-[145px];
+  }
+  .title-2 {
+    @apply font-Glory font-medium text-[84px];
+  }
+  .heading-1 {
+    @apply font-medium font-Glory text-5xl;
+  }
+  .heading-2 {
+    @apply font-medium font-Glory text-[32px];
+  }
+  .heading-3 {
+    @apply font-medium font-Glory text-2xl;
+  }
+  .heading-4 {
+    @apply font-normal font-Glory text-xl;
+  }
+  .heading-5 {
+    @apply font-semibold font-Glory text-xl;
+  }
+  .heading-6 {
+    @apply font-semibold text-base font-Glory;
+  }
+}
+
+body::-webkit-scrollbar,
+textarea::-webkit-scrollbar {
+  display: none;
+  scroll-behavior: smooth;
+}
+
+.dropShadow {
+  -webkit-box-shadow: 0px 0px 49px 0px rgba(160, 25, 250, 1);
+  -moz-box-shadow: 0px 0px 49px 0px rgba(160, 25, 250, 1);
+  box-shadow: 0px 0px 49px 0px rgba(160, 25, 250, 1);
+}
