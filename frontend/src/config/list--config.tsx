@@ -175,7 +175,7 @@ export const skillList = [
   },
   {
     title: "React Query",
-    imgSrc: "/skills/reactQuery.png",
+    imgSrc: "/skills/query.png",
   },
 ];
 
