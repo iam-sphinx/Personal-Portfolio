@@ -1,5 +1,6 @@
 import ProjectCard from "@/components/ProjectCard";
 import React from "react";
+import { projectList } from "@/config/list--config";
 
 const ProjectPage = () => {
   return (
@@ -12,11 +13,9 @@ const ProjectPage = () => {
       </h1>
 
       <div className="w-fit grid grid-cols-3 mx-auto gap-24 mt-24">
-        <ProjectCard />
-        <ProjectCard />
-        <ProjectCard />
-        <ProjectCard />
-        <ProjectCard />
+        {projectList.map((item, idx) => {
+          return <ProjectCard key={idx} {...item}/>;
+        })}
       </div>
     </section>
   );

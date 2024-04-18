@@ -17,7 +17,7 @@ const Handles = ({ links, title }: Props) => {
       <div className="flex gap-6 mt-6">
         {links.map((item, idx) => {
           return item.link ? (
-            <Link href={item.link} key={idx} target={item.target}>
+            <Link key={idx} href={item.link} target={item.target}>
               {item.element}
             </Link>
           ) : (

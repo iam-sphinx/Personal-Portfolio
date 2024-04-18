@@ -197,3 +197,38 @@ export const experienceList = [
     ],
   },
 ];
+
+// projects
+export const projectList = [
+  {
+    githubLink: "https://github.com/iam-sphinx/Donut-A-Blog-website",
+    liveLink: "https://donut-jet.vercel.app/",
+    title: "Donut - Blog website",
+    techStack: [
+      "MERN",
+      "Tailwind CSS",
+      "JavaScript",
+      "JWT",
+      "Bcrypt",
+      "Cloudinary",
+      "Multer",
+    ],
+    imgSrc: "/projects/1.png",
+    desc: "Donut a Blog website where you can create update manages blog posts. And simply follow other creators.",
+  },
+  {
+    githubLink: "https://github.com/iam-sphinx/Anime-Vault",
+    liveLink: "https://anime-vault-tau-one.vercel.app/",
+    title: "Anime Vault",
+    techStack: [
+      "Next.js",
+      "tailwind CSS",
+      "Rest APIs",
+      "TypeScript",
+      "Framer Motion",
+      "React Intersection Observer",
+    ],
+    imgSrc: "/projects/2.png",
+    desc: "Anime Vault is a anime website which uses shikimori free API to display anime, infinite scrolling and reveal animation",
+  },
+];

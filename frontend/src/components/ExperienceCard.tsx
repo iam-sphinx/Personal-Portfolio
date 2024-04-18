@@ -49,7 +49,7 @@ const ExperienceCard = ({
           <div className=" p-2 px-6">
             {description.map((para, idx) => {
               return (
-                <p className="text-gray-1 mb-2 heading-6" key={idx}>
+                <p key={idx} className="text-gray-1 mb-2 heading-6">
                   {para}
                 </p>
               );
