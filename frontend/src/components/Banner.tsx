@@ -4,7 +4,7 @@ import React from "react";
 
 const Banner = () => {
   return (
-    <div className="flex justify-between">
+    <div className="flex flex-col sm:flex-row justify-between">
       <div>
         <h1 className="text-6xl font-bold  font-Glory">
           Hi, I&apos;m <span className="text-orange-500">Kandarp</span>
@@ -35,7 +35,7 @@ const Banner = () => {
         </div>
       </div>
 
-      <div className="size-96 relative overflow-hidden animate-laminar shadow-lg dropShadow ring-2 ring-[#a019fa]">
+      <div className="size-64 mx-auto sm:size-96 relative overflow-hidden animate-laminar shadow-lg dropShadow ring-2 ring-[#a019fa]">
         <Image
           src="/project.jpg"
           fill={true}

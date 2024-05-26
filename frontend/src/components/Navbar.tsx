@@ -7,8 +7,8 @@ import Breaker from "./Breaker";
 const Navbar = () => {
   return (
     <>
-      <div className="flex justify-between mt-6 gap-36 items-center">
-        <Link href={"/"}>
+      <div className="flex justify-between mt-6 sm:gap-36 items-center">
+        <Link href={"/"} className="hidden sm:block">
           <Image src={"/logo.svg"} height={24} width={24} alt="logo" />
         </Link>
 

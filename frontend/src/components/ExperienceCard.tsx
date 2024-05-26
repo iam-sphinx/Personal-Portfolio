@@ -45,7 +45,7 @@ const ExperienceCard = ({
         </Link>
         <h1 className="heading-6 tracking-wider">{tenure}</h1>
 
-        <div className="w-[700px] bg-page  bg-no-repeat bg-cover rounded-lg mt-6 overflow-hidden">
+        <div className="w-full sm:w-[700px] bg-page  bg-no-repeat bg-cover rounded-lg mt-6 overflow-hidden">
           <div className=" p-2 px-6">
             {description.map((para, idx) => {
               return (

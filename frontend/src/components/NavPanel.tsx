@@ -11,7 +11,7 @@ const NavPanel = () => {
             key={idx}
             href={item.link}
             target={item.target}
-            className="hover:bg-white px-6 py-1 rounded-full hover:text-black"
+            className="hover:bg-white px-2 sm:px-6 py-1 rounded-full hover:text-black"
           >
             {item.title}
           </Link>

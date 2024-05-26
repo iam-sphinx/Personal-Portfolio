@@ -33,13 +33,13 @@ const Contact = () => {
     <div className="min-h-screen">
       <h1 className="title-2">Let&apos;s Connect</h1>
 
-      <div className="flex justify-between">
+      <div className="flex flex-col sm:flex-row justify-between">
         <div className="flex-1">
           <Handles title="My Social Handles:" links={socialLinks} />
           <Handles title="Personal Contact:" links={contactInfo} />
         </div>
 
-        <div className="flex-1">
+        <div className="flex-1 mt-24 sm:mt-0">
           <form className="flex flex-col gap-3" onSubmit={handleSubmit}>
             <label htmlFor="name">Your Name</label>
             <input

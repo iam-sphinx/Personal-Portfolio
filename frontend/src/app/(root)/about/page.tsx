@@ -6,7 +6,7 @@ import React from "react";
 const About = () => {
   return (
     <section className="min-h-screen">
-      <div className="flex justify-between mt-6 mb-24">
+      <div className="flex flex-col sm:flex-row justify-between mt-6 mb-24">
         <div className="flex-1 tracking-wide flex flex-col gap-6">
           <h1 className="heading-1 tracking-wider">More than a Developer!</h1>
           <h1 className="heading-3 mt-12 tracking-wider">Who i am ?</h1>

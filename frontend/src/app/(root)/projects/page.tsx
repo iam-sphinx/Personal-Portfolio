@@ -12,7 +12,7 @@ const ProjectPage = () => {
         Explore My Web Projects!
       </h1>
 
-      <div className="w-fit grid grid-cols-3 mx-auto gap-24 mt-24">
+      <div className="w-fit grid sm:grid-cols-3 mx-auto gap-24 mt-24">
         {projectList.map((item, idx) => {
           return <ProjectCard key={idx} {...item}/>;
         })}

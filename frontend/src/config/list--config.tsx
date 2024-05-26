@@ -231,4 +231,21 @@ export const projectList = [
     imgSrc: "/projects/2.png",
     desc: "Anime Vault is a anime website which uses shikimori free API to display anime, infinite scrolling and reveal animation",
   },
+  {
+    githubLink: "https://github.com/iam-sphinx/casecobra",
+    liveLink: "https://casecobra-rho.vercel.app/",
+    title: "Case Cobra",
+    techStack: [
+      "Next.js",
+      "tailwind CSS",
+      "Uploadthing",
+      "React-Dropzone",
+      "Headless-UI",
+      "Tanstack/React-Query",
+      "Stripe",
+      "Shadcn-ui"
+    ],
+    imgSrc: "/projects/3.png",
+    desc: "Case Cobra is a platform where you can create and buy custom phone covers",
+  },
 ];
