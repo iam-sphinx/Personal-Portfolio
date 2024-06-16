@@ -11,9 +11,8 @@ export const metadata: Metadata = {
   title: "Kandarp's Portfolio",
   description: "Personal Portfolio",
   icons: {
-    icon: "/favicon.svg"
-  }
-  
+    icon: "/favicon.svg",
+  },
 };
 
 export default function RootLayout({

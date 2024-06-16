@@ -1,4 +1,4 @@
-"use client";
+import ContactForm from "@/components/ContactForm";
 import Handles from "@/components/Handles";
 import { contactInfo, socialLinks } from "@/config/list--config";
 import React, { ChangeEvent, FormEvent, useState } from "react";
@@ -8,27 +8,6 @@ type FormData = {
   message: string;
 };
 const Contact = () => {
-  const [formData, setFormData] = useState<FormData>({
-    email: "",
-    message: "",
-    name: "",
-  });
-
-  const handleChange = (
-    e: ChangeEvent<HTMLInputElement> | ChangeEvent<HTMLTextAreaElement>
-  ) => {
-    const { name, value } = e.target;
-    setFormData((prevData) => {
-      return { ...prevData, [name]: value };
-    });
-  };
-
-  const handleSubmit = async (e: FormEvent) => {
-    e.preventDefault();
-
-    // To Do Data storage in future
-  };
-
   return (
     <div className="min-h-screen">
       <h1 className="title-2">Let&apos;s Connect</h1>
@@ -40,13 +19,13 @@ const Contact = () => {
         </div>
 
         <div className="flex-1 mt-24 sm:mt-0">
-          <form className="flex flex-col gap-3" onSubmit={handleSubmit}>
+          <ContactForm />
+          {/* <form className="flex flex-col gap-3">
             <label htmlFor="name">Your Name</label>
             <input
               type="text"
               id="name"
               name="name"
-              onChange={handleChange}
               className="h-12 bg-gray-1 rounded-full px-6 outline-none text-ellipsis"
             />
 
@@ -55,7 +34,6 @@ const Contact = () => {
               type="text"
               id="email"
               name="email"
-              onChange={handleChange}
               className="h-12 bg-gray-1 rounded-full px-6 outline-none text-ellipsis"
             />
 
@@ -64,7 +42,6 @@ const Contact = () => {
               rows={5}
               id="message"
               name="message"
-              onChange={handleChange}
               className="bg-gray-1 rounded-md p-6 resize-none outline-none"
             />
 
@@ -74,7 +51,7 @@ const Contact = () => {
             >
               Submit
             </button>
-          </form>
+          </form> */}
         </div>
       </div>
     </div>

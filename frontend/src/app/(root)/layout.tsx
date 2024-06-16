@@ -1,5 +1,6 @@
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
+import { Toaster } from "@/components/ui/toaster";
 import React, { ReactNode } from "react";
 
 const layout = ({ children }: { children: ReactNode }) => {
@@ -8,6 +9,7 @@ const layout = ({ children }: { children: ReactNode }) => {
       <Navbar />
       {children}
       <Footer />
+      <Toaster />
     </div>
   );
 };
